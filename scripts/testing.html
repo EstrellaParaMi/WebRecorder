@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crap001</title>
+</head>
+<body>
+    
+
+<h1>Hi Victor</h1>
+
+
+<script>
+
+    if (window.MediaRecorder == undefined) {
+        console.error('MediaRecorder not supported, boo');
+      } else {
+        var contentTypes = ["video/webm",
+                            "video/webm;codecs=vp8",
+                            "video/x-matroska;codecs=avc1",
+                            "audio/webm",
+                            "video/mp4;codecs=avc1",
+                            "video/invalid"];
+        contentTypes.forEach(contentType => {
+          console.log(contentType + ' is '
+              + (MediaRecorder.isTypeSupported(contentType) ?
+                  'supported' : 'NOT supported '));
+        });
+      }
+
+
+
+
+
+
+
+      
+    </script>
+</body>
+</html>
+
+
+
+
+
+
